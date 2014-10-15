@@ -1,0 +1,24 @@
+<div>	
+	<div id="container">
+		<div>
+			<div id="display">
+				<div id="nightmode" style="opacity: 0;"></div>
+				<h1></h1>
+				<h2></h2>
+	  
+				<div class="layer west">
+					<img src="img/plane_west.png" style="opacity: 1;">
+					<h2>Abflug nach Westen Betriebsrichtung 25</h2>
+				</div>
+				<div class="layer east">
+					<img src="img/plane_east.png" style="opacity: 0;">
+					<h2>Abflug nach Osten Betriebsrichtung 07</h2>
+				</div>
+			</div>
+			<div class="range">
+				<input type="range" min="0" max="240" ng-model="model.rangeValue">
+			</div>          
+		</div>
+	</div>
+	<p id="info" ng-bind="model.info"></p>
+</div>

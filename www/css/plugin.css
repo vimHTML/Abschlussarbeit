@@ -1,0 +1,66 @@
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+
+
+#container {	width:100%; height: 0; padding-bottom:66%;overflow:hidden;margin-bottom:3em;background-color:#FFFFFF;position:relative; }
+#container{	margin-top:2em;width:100%;height: 300px; background-color: #fff; font-family: Georgia, "Times New Roman", Times, serif; color: #aaa; position:relative; }
+#brp-wrapper{	position:absolute;top:0;left:0;width:100%;height: 100%; background-color: #fff; font-family: Georgia, "Times New Roman", Times, serif; color: #aaa; }
+
+
+
+#container h1,
+#container h2 {text-align: center; margin: 0; padding: 0; position: absolute; width: 100%; color:#949494; border:0px;}
+
+#container h1{	font-size: 24px; padding-top: 15px; font-weight: normal;}
+#container h2{	font-size: 13px; padding-top: 45px; font-weight: normal; line-height: 1.2;}
+
+#container>p { font-size: 14px; color: #000; margin-top:15px; width:115%; } 
+
+#container #display{ position: relative; background: transparent url('../img/bg_display_day.png') no-repeat bottom right;  height: 255px; margin-bottom: 1px}
+#container #display #nightmode { position: absolute; width: 100%; height:100%; background: transparent url('../img/bg_display_night.png') no-repeat bottom right; }
+#container #display .layer{ position: absolute;	top: 88px; width: 30%;text-align:center; }
+#container #display .layer img {width:80%}
+#container #display .layer.west{ left: 10%; }
+#container #display .layer.east{ right: 4%; }
+#container #display .layer h2 { padding-top: 10px; }
+
+#container .layer.slider { width:100%; height:26px; /*background: url('...img/bg_bar.png') no-repeat top left;*/ }
+#container .layer.slider .control { margin-left: 3%; width:92%; height: 26px; cursor: w-resize}
+
+
+#container .ui-widget-content {background: transparent; border: 0px; height: 26px;}
+#container .ui-slider .ui-slider-handle { width: 41px; height: 20px; }
+#container .ui-slider-horizontal .ui-slider-handle { top: -10px; margin-left: -15px; }
+#container .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: url('../img/slider.png') no-repeat top left; border: 0px}
+
+
+@media (max-width: 35em){
+
+    #container #display{ background-position:85% bottom}
+    #container #display #nightmode { background-position:85% bottom}
+}
+@media (max-width: 27em){
+
+    #container #display .layer.west{ left: 3%; width:36% }
+    #container #display{ background-position:72% bottom}
+    #container #display #nightmode { background-position:72% bottom}
+
+    #container h1 {font-size:18px;}
+    #container h2 {padding-top:36px}
+
+
+}
